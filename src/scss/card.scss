@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+task-card {
+  border: 1px solid black;
+  border-radius: 3px;
+
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+}
