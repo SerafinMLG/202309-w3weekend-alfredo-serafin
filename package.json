@@ -9,6 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "build:ts": "tsc -w",
+    "api": "json-server --watch ./api/db.json",
     "test": "jest --watchAll --coverage",
     "test:pro": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
     "test:coverage": "jest --watchAll --coverage",
