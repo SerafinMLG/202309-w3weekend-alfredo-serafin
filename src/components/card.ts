@@ -25,8 +25,8 @@ export class Card extends Component {
   createTemplate() {
     const id = this.poke.url.split('/').filter(Boolean).pop();
     return `
-    <li class="task-card">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${id}.gif" alt="imagen del pokemon">
+    <li class="task-card"><p>${id}</p>
+    <div class = "image"><img class="gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${id}.gif" alt="imagen del pokemon"></div>
       <p><span></span> ${this.poke.name}</p>
     </li>
       `;
