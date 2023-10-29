@@ -26,8 +26,11 @@ export class Card extends Component {
     const id = this.poke.url.split('/').filter(Boolean).pop();
     return `
     <li class="task-card"><p>${id}</p>
-    <div class = "image"><img class="gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${id}.gif" alt="imagen del pokemon"></div>
-      <p><span></span> ${this.poke.name}</p>
+    <a href="https://pokeapi.co/api/v2/pokemon/${this.poke.name}">
+    <div class = "image"><img class="gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${id}.gif" alt="imagen del pokemon">
+    </div>
+      <p class="pokname">${this.poke.name}</p>
+      </a>
     </li>
       `;
   }

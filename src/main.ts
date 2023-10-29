@@ -2,7 +2,6 @@ import { List } from './components/list';
 import { Header } from '../src/components/header';
 import './scss/card.scss';
 
-import { Footer } from '../src/components/footer';
 
 function main() {
 console.log('Loaded main');
