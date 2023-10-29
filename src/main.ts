@@ -12,7 +12,6 @@ const components =
   // eslint-disable-next-line no-new
   new List('.header');
   // eslint-disable-next-line no-new
-  new Footer('.task-card');
 
 console.log(components);
 }

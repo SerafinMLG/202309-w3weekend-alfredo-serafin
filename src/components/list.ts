@@ -8,6 +8,7 @@ export class List extends Component {
   pokes: Poke[];
   repo: ApiRepo;
   constructor(selector: string) {
+    
     super(selector);
     this.repo = new ApiRepo();
     this.pokes = [];
@@ -33,7 +34,7 @@ export class List extends Component {
       this.template = this.createTemplate();
       super.render();
       return this.pokes.results.map(
-        (item) =>
+        (item: Poke) =>
           new Card(
             'ul',
             item)
