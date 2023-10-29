@@ -37,16 +37,12 @@ export class List extends Component {
           new Card(
             'ul',
             item)
-          
         );
-        
-
     }
 
     createTemplate() {
       return `
       <ul></ul>    
-
     `;
   }
 }

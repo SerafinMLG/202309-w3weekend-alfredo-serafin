@@ -1,6 +1,5 @@
 import { Component } from './component';
-import './footer.scss';
-
+import '../scss/footer.scss';
 export class Footer extends Component {
   constructor(selector: string) {
     super(selector);

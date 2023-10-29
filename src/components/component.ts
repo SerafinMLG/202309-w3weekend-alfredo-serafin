@@ -18,13 +18,3 @@ export abstract class Component {
     this.element.outerHTML = '';
   }
 }
-
-//   ------------------- beforebegin
-// <div>
-//   ------------------- afterbegin
-//   ......
-//   <p></p>
-//   .......
-//   ------------------- beforeend
-// </div>
-// ---------------------- afterend

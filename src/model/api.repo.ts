@@ -11,18 +11,4 @@ export class ApiRepo {
   }
 
 
-  // Aasync createPoke(newPoke: Partial<Poke>): Promise<Poke> {
-  //   const response = await fetch(this.apiUrl, {
-  //     method: 'POST',
-  //     body: JSON.stringify(newPoke),
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //   });
-  //   if (!response.ok)
-  //     throw new Error(response.status + ' ' + response.statusText);
-  //   return response.json();
-
-  // }
-
 }

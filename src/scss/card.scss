@@ -1,17 +1,26 @@
 * {
   box-sizing: border-box;
+  background-color: rgb(188, 216, 7);
 }
 
-task-card {
+.task-card {
   border: 1px solid black;
   border-radius: 3px;
-
+  background-color: azure;
 }
 
 ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-
+  list-style: none;
+  background-color: azure;
 }
+
+.image {
+  background-color: azure;
+}
+
+
+

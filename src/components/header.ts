@@ -1,27 +1,21 @@
-import { MenuOption } from '../types';
 import { Component } from './component';
-import './header.scss';
-import { Menu } from './menu';
+import '../scss/header.scss';
+
+
 
 export class Header extends Component {
-  options: MenuOption[];
-  constructor(selector: string, options: MenuOption[]) {
+
+  constructor(selector: string) {
     super(selector);
-    this.options = options;
     this.template = this.createTemplate();
     this.render();
   }
 
-  render() {
-    super.render();
-    const elements = [new Menu('header', this.options)];
-    console.log('Header', elements);
-  }
 
   createTemplate() {
     return ` 
-    <header>
-      <h1>Learning Typescript</h1>
+    <header class="header">
+      <img src="./public/img/pokemon-logo.svg" alt="logo pokemon" width="300" height="150">
     </header>
     `;
   }
