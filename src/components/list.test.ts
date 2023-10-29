@@ -1,15 +1,14 @@
 import { screen } from '@testing-library/dom';
 import '@testing-library/jest-dom';
 import { List } from './list';
-import { getTasks } from '../data/repo';
-import { ApiRepo } from '../data/api.repo';
-
+import { ApiRepo } from '../model/api.repo';
+import { getPoke } from '../components/';
 jest.mock('../data/repo');
 
-ApiRepo.prototype.getTasks = jest.fn();
+ApiRepo.prototype.getPoke = jest.fn();
 
 describe('Given List component', () => {
-  (getTasks as jest.Mock).mockReturnValue([{}]);
+  (getPoke as jest.Mock).mockReturnValue([{}]);
   describe('When we instantiate', () => {
     document.body.innerHTML = '<div></div>';
     const list = new List('div');
