@@ -18,4 +18,4 @@ El usuario debe poder añadir los pokémon que quiera a su listado local. El lis
 Desde los favoritos, también se puede acceder a la página de detalle.
 
 Features
-Opcional: BEM + sass Vite HTML semántico Testing
+Opcional: BEM + sass Vite HTML semántico Testing y otras cosas.

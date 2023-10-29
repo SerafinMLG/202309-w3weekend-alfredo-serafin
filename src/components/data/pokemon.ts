@@ -1,6 +1,6 @@
-export interface Poke {
+export type Poke = {
   id: number;
   name: string;
   url: string;
-  results: any[];
+
 };
