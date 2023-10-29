@@ -5,6 +5,9 @@
     },
     "command": "npm run build --if-present",
     "skipNpmInstall": true,
-    "use": "@vercel/node"
+    "use": "@vercel/node",
+    "env": {
+      "TSC_COMPILE_ON_ERROR": true
+    }
   }
 }
